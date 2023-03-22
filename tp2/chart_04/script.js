@@ -3,11 +3,9 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     // Guardamos el svg generado en la variable chart
     let chart = Plot.plot({
       marks: [
-        Plot.barY(data, {
-          y: "mision_hs",
-          x: "ocupacion",
-          fill: "ocupacion"
-        }),
+        Plot.barY(data,
+          Plot.groupX({ y: "sum" }, { x: "ocupacion" , y: "mision_hs", fill: "ocupacion"})
+        )
       ],
 
     })
