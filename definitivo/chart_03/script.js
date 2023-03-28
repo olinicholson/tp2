@@ -11,7 +11,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     
   })
   // Agregamos chart al div#chart de index.html
-  d3.select('#chart_05').append(() => chart)
+  d3.select('#chart_03').append(() => chart)
 })
   
   
