@@ -4,7 +4,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     let chart = Plot.plot({
       marks: [
         Plot.barY(data,
-          Plot.groupX({ y: "sum" }, { x: "ocupacion" , y: "mision_hs", fill: "ocupacion"})
+          Plot.groupX({ y: "sum" }, { x: "anio_mision" , y: "mision_hs", fill: "anio_mision"})
         )
       ],
 
