@@ -3,12 +3,12 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     // Guardamos el svg generado en la variable chart
     let chart = Plot.plot({
       marks: [
-        Plot.line(data,
+        Plot.areaY(data,
           Plot.groupX({ y: "count" }, { x: "anio_mision" ,
-           y: "mision_hs", fill: "anio_mision"})
+           y: "mision_hs", fill: "#E6E1E0"})
         )
       ],
-      marginLeft: 50,
+      marginLeft: 20,
 
     })
     // Agregamos chart al div#chart de index.html
