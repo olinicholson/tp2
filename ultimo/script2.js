@@ -9,9 +9,14 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         )
       ],
       marginLeft: 20,
+      y:{
+        label: "cantidad de horas",
+        },
+        x:{
+          label: "año",
+          },
 
     })
     // Agregamos chart al div#chart de index.html
     d3.select('#chart_02').append(() => chart)
   })
-  
