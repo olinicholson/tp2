@@ -16,6 +16,9 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       x:{
       label: null,
       },
+      y:{
+        label: "horas de misión",
+        },
 
     })
     // Agregamos chart al div#chart de index.html
