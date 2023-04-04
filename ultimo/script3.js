@@ -12,16 +12,15 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     marginLeft: 50,
     
     x: {
-      
       tickRotate: -45,
       label: null,
     },
+    y:{
+      label: "cantidad de horas",
+      },
     marginBottom: 100,
 
   })
   // Agregamos chart al div#chart de index.html
   d3.select('#chart_03').append(() => chart)
 })
-  
-  
-  
